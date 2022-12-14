@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\AuthController;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -19,13 +20,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
-});
-
-//protecting route
-//http://127.0.0.1:8000/api/products2
-Route::group(['middleware' => ['auth:sanctum']], function () {
-    Route::get('/products2', [ProductController::class, 'index']);
-
 });
 
 /**
@@ -65,3 +59,17 @@ Route::get('/products/search/{name}', [ProductController::class,'search']);
  */
 //http://127.0.0.1:8000/api/products-resource
 Route::resource('/products-resource', ProductController::class);
+
+
+//PROTECTED RPUTES... IE ONLY AUTHENTICATED USER CAN USE
+//http://127.0.0.1:8000/api/products2
+Route::group(['middleware' => ['auth:sanctum']], function () {
+    Route::get('/products2', [ProductController::class, 'index']);
+
+});
+
+
+//register
+//http://127.0.0.1:8000/api/register
+Route::post('/register',[AuthController::class, 'register']);
+

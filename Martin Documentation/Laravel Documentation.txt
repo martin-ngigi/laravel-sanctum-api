@@ -52,6 +52,10 @@ Making sanctum ... url https://laravel.com/docs/9.x/sanctum
     php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
     php artisan migrate
 
+Making Controller run:
+    php artisan make:controller AuthController
+
+
 
 
 

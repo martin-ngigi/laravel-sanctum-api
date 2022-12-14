@@ -92,6 +92,7 @@ response
 endpoints -> http://127.0.0.1:8000/api/products-resource
 
 7. GET search product by name
+// ** NB: REMEBER TO ADD HEADERS IN POSTMAN ie Key-> Acceppt, Value-> application/json or change Accept =  */* from by unchecking all  and add another Accept
 endpoint -> http://127.0.0.1:8000/api/products/search/one
 result:
 [
@@ -105,3 +106,26 @@ result:
         "updated_at": "2022-12-14T05:45:36.000000Z"
     }
 ]
+
+8. POST -> Register User
+// ** NB: REMEBER TO ADD HEADERS IN POSTMAN ie Key-> Acceppt, Value-> application/json or change Accept =  */* from by unchecking all  and add another Accept
+enpoint-> http://127.0.0.1:8000/api/register/
+body is :
+{
+    "name":"martin",
+    "email":"martin@gmail.com",
+    "password":"123456",
+    "password_confirmation":"123456"
+}
+
+response is :
+{
+    "user": {
+        "name": "martin",
+        "email": "martin@gmail.com",
+        "updated_at": "2022-12-14T11:58:33.000000Z",
+        "created_at": "2022-12-14T11:58:33.000000Z",
+        "id": 1
+    },
+    "token": "1|SS3uFpsOEqGIZD8O1mEAAqXQ7Ohn5yhG949clDWP"
+}
