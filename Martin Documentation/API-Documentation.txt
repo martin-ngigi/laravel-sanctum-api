@@ -131,4 +131,8 @@ response is :
 }
 
 9. Get protected products
+enpoint -> http://127.0.0.1:8000/api/protected-products
 Select Authorization->Inheritance(Click Beaer tokens) then paste the tokens obtained from registering.
+
+10.logout
+endpoint http://127.0.0.1:8000/api/logout
