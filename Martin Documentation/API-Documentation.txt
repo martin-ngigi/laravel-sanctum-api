@@ -139,3 +139,25 @@ Select Authorization->Inheritance(Click Beaer tokens) then paste the tokens obta
 
 10.logout
 endpoint http://127.0.0.1:8000/api/logout
+
+11. login
+enpoint ->http://127.0.0.1:8000/api/login
+
+body is :
+{
+    "email":"martin@gmail.com",
+    "password":"123456"
+}
+
+response is :
+{
+    "user": {
+        "id": 1,
+        "name": "martin",
+        "email": "martin@gmail.com",
+        "email_verified_at": null,
+        "created_at": "2022-12-14T11:58:33.000000Z",
+        "updated_at": "2022-12-14T11:58:33.000000Z"
+    },
+    "token": "3|XmILRPt2lbCCOBJXkVUqOze7XSb9yzjSbG58H3iW"
+}
