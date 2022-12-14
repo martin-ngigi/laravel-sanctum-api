@@ -88,4 +88,14 @@ class ProductController extends Controller
         return Product::destroy($id);
         //return 'Product deleted successfully';
     }
+
+    /**
+     * Summary of search by name
+     * @param mixed $name
+     * @return mixed
+     */
+    public function search($name){
+        return Product::where('name','like', '%'.$name)->get();
+    }
+
 }
