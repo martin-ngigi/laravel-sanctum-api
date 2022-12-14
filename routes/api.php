@@ -32,7 +32,7 @@ Route::get('/products', [ProductController::class, 'index']);
  * Post product
  * 'store is a method defined in the ProductController'
  */
-// ** NB: REMEBER TO ADD HEADERS IN POSTMAN ie Key-> Acceppt, Value-> application/json or change Accept =  */* from by unchecking it and another Accept
+// * NB: REMEBER TO ADD HEADERS IN POSTMAN ie Key-> Acceppt, Value-> application/json or change Accept =  */* from by unchecking it and another Accept
 
 //http://127.0.0.1:8000/api/products
 Route::post('/products',[ProductController::class, 'store']);
@@ -40,9 +40,13 @@ Route::post('/products',[ProductController::class, 'store']);
 /**
  * get one product by id
  * 'show' is a method defined in ProductController
+ * 'update'  is a method defined in ProductController
+ * 'destroy' is a method defined in ProductController
  */
 //http://127.0.0.1:8000/api/products/2
 Route::get('/products/{id}', [ProductController::class, 'show']);
+Route::put('/products/{id}', [ProductController::class, 'update']);
+Route::delete('/products/{id}', [ProductController::class, 'destroy']);
 
 /**
  * all of above get and post and CRUD routes can be replaced with a single resource
