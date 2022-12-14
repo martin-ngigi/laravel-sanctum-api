@@ -28,7 +28,14 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // return Product::create([
+        //     'name' => 'Product One',
+        //     'slug' => 'Product-one',
+        //     'description' => 'This is product description',
+        //     'price' => '99.99',
+        // ]);
+
+        return Product::create($request->all());
     }
 
     /**
