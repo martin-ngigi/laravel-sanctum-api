@@ -47,8 +47,10 @@ Checking all routes:
  to check all routes, run in cmd:
     php artisan route:list
 
-
-
+Making sanctum ... url https://laravel.com/docs/9.x/sanctum
+    composer require laravel/sanctum
+    php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+    php artisan migrate
 
 
 

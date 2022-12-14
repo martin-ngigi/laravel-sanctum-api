@@ -21,6 +21,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+//protecting route
+//http://127.0.0.1:8000/api/products2
+Route::group(['middleware' => ['auth:sanctum']], function () {
+    Route::get('/products2', [ProductController::class, 'index']);
+
+});
+
 /**
  * get all products
  * 'index' is a method defined in ProductController
