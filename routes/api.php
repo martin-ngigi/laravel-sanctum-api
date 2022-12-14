@@ -74,5 +74,12 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
 
 //register
 //http://127.0.0.1:8000/api/register
+//'register' is a method defined in AuthController
 Route::post('/register',[AuthController::class, 'register']);
+
+
+//login
+//http://127.0.0.1:8000/api/login
+//'login' is a method defined in AuthController
+Route::post('/login',[AuthController::class, 'login']);
 

@@ -1,3 +1,6 @@
+Youtube LINK -> https://www.youtube.com/watch?v=MT-GJQIY3EU&t=189s&ab_channel=TraversyMedia
+
+
 1. POST ->create product
 // ** NB: REMEBER TO ADD HEADERS IN POSTMAN ie Key-> Acceppt, Value-> application/json or change Accept =  */* from by unchecking all  and add another Accept
 endpoint -> http://127.0.0.1:8000/api/products
