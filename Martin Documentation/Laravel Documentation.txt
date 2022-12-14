@@ -31,28 +31,34 @@ the web will be  visible at
 or after starting the xamp server, navigate to htdocs xamp and copy the relative path :
 http://localhost/LARAVEL/laravel-web/public/
 
+create a model
+    php artisan make:model Produc
+or
 create a model and a migration
     php artisan make:model Product -m
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Making Controller run:
-    php artisan make:controller Users
+    php artisan make:controller ProductController
+or
+Making Controller with api methods run: .............  "--api" will create associated methods in api such as create, update, delete
+    php artisan make:controller ProductController --api
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Making a component (its a piece of code that can be reused eg a header):
     php artisan make:component header
