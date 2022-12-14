@@ -1,4 +1,6 @@
-Youtube Tutorial -> https://www.youtube.com/watch?v=9fC5zmvbDwU&list=PL8p2I9GklV47Jszga434vZxOmY74Q1N_K&index=2&ab_channel=CodeStepByStep
+Install Laravel -> Youtube Tutorial -> https://www.youtube.com/watch?v=9fC5zmvbDwU&list=PL8p2I9GklV47Jszga434vZxOmY74Q1N_K&index=2&ab_channel=CodeStepByStep
+Laravel API Tutorial -> https://www.youtube.com/watch?v=MT-GJQIY3EU&t=189s&ab_channel=TraversyMedia
+
 
 Installations:
 1. Install Xamp(once) - will also automatically install php
@@ -29,7 +31,8 @@ the web will be  visible at
 or after starting the xamp server, navigate to htdocs xamp and copy the relative path :
 http://localhost/LARAVEL/laravel-web/public/
 
-
+create a model and a migration
+    php artisan make:model Product -m
 
 
 
