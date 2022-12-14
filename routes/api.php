@@ -32,7 +32,7 @@ Route::get('/products', [ProductController::class, 'index']);
  * Post product
  * 'store is a method defined in the ProductController'
  */
-// * NB: REMEBER TO ADD HEADERS IN POSTMAN ie Key-> Acceppt, Value-> application/json or */*
+// ** NB: REMEBER TO ADD HEADERS IN POSTMAN ie Key-> Acceppt, Value-> application/json or change Accept =  */* from by unchecking it and another Accept
 
 //http://127.0.0.1:8000/api/products
 Route::post('/products',[ProductController::class, 'store']);

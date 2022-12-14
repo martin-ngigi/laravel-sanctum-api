@@ -35,6 +35,14 @@ class ProductController extends Controller
         //     'price' => '99.99',
         // ]);
 
+        //validate data
+        $request->validate([
+            'name' => 'required',
+            'slug' => 'required',
+            'price' => 'required'
+        ]);
+
+
         return Product::create($request->all());
     }
 
