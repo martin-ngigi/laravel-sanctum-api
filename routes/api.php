@@ -36,3 +36,11 @@ Route::get('/products', [ProductController::class, 'index']);
 
 //http://127.0.0.1:8000/api/products
 Route::post('/products',[ProductController::class, 'store']);
+
+/**
+ * get one product by id
+ * 'show' is a method defined in ProductController
+ */
+//http://127.0.0.1:8000/api/products/2
+Route::get('/products/{id}', [ProductController::class, 'show']);
+
