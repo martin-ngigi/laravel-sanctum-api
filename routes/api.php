@@ -44,3 +44,11 @@ Route::post('/products',[ProductController::class, 'store']);
 //http://127.0.0.1:8000/api/products/2
 Route::get('/products/{id}', [ProductController::class, 'show']);
 
+/**
+ * all of above get and post and CRUD routes can be replaced with a single resource
+ * to check all routes, run in cmd:
+ *                               php artisan route:list
+ * Supported methods: GET, HEAD, PUT, PATCH, DELETE
+ */
+//http://127.0.0.1:8000/api/products-resource
+Route::resource('/products-resource', ProductController::class);

@@ -43,8 +43,9 @@ or
 Making Controller with api methods run: .............  "--api" will create associated methods in api such as create, update, delete
     php artisan make:controller ProductController --api
 
-
-
+Checking all routes:
+ to check all routes, run in cmd:
+    php artisan route:list
 
 
 
