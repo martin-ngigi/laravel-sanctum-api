@@ -62,9 +62,9 @@ Route::resource('/products-resource', ProductController::class);
 
 
 //PROTECTED RPUTES... IE ONLY AUTHENTICATED USER CAN USE
-//http://127.0.0.1:8000/api/products2
+//http://127.0.0.1:8000/api/protected-products
 Route::group(['middleware' => ['auth:sanctum']], function () {
-    Route::get('/products2', [ProductController::class, 'index']);
+    Route::get('/protected-products', [ProductController::class, 'index']);
 
 });
 

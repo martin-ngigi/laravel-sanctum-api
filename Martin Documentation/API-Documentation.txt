@@ -129,3 +129,6 @@ response is :
     },
     "token": "1|SS3uFpsOEqGIZD8O1mEAAqXQ7Ohn5yhG949clDWP"
 }
+
+9. Get protected products
+Select Authorization->Inheritance(Click Beaer tokens) then paste the tokens obtained from registering.
