@@ -1,0 +1,65 @@
+Youtube Tutorial -> https://www.youtube.com/watch?v=9fC5zmvbDwU&list=PL8p2I9GklV47Jszga434vZxOmY74Q1N_K&index=2&ab_channel=CodeStepByStep
+
+Installations:
+1. Install Xamp(once) - will also automatically install php
+2. Install Composer(once)
+3. Install laravel(once)
+4. Install Tabine AI autocompletion extension in VS
+
+Check php version:
+	php -v
+Check composer version:
+	composer --version
+Install laravel globally in cmd by running following command in cmd:
+	composer global require laravel/installer
+check laravel version:
+	laravel -v
+
+
+Create new Laravel project:
+	laravel new laravel-santum-api
+
+start Laravel's local development server using the Laravel's Artisan CLI serve command:
+	cd new laravel-santum-api
+	php artisan serve
+
+the web will be  visible at
+	http://127.0.0.1:8000/
+
+or after starting the xamp server, navigate to htdocs xamp and copy the relative path :
+http://localhost/LARAVEL/laravel-web/public/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Making Controller run:
+    php artisan make:controller Users
+
+Making a component (its a piece of code that can be reused eg a header):
+    php artisan make:component header
+
+Making MiddleWare(is a piece of code that checks users request. eg at login).. Run:
+    php artisan make:middleware ageCheck
+
+
+Making Migrations... "employees" is table name
+    php artisan make:migration create_employees
+
+Migrating the migration
+    php artisan migrate
